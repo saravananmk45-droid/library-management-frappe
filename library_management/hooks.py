@@ -4,6 +4,7 @@ app_publisher = "Saravanan M K"
 app_description = "Custom Library Management System for ERPNext"
 app_email = "saravananmk45@gmail.com"
 app_license = "mit"
+fixtures   = ["Custom Field"]
 
 # Apps
 # ------------------
@@ -134,9 +135,12 @@ app_license = "mit"
 # }
 
 # Document Events
-# ---------------
-# Hook on document methods and events
 
+# Hook on document methods and events
+doc_events = {
+    "Library Member": {
+        "after_insert": "library_management.library_management.doctype.library_member.library_member.member_created"}
+}
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",

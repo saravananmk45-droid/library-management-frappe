@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-28 14:21:25.052429",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "book_details",
+  "book_title",
+  "author",
+  "category",
+  "available",
+  "published_date",
+  "isbn_number",
+  "book_status",
+  "total_copies"
+ ],
+ "fields": [
+  {
+   "fieldname": "book_details",
+   "fieldtype": "Data",
+   "label": "Book Details"
+  },
+  {
+   "fieldname": "book_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Book Category"
+  },
+  {
+   "default": "0",
+   "fieldname": "available",
+   "fieldtype": "Check",
+   "label": "Available"
+  },
+  {
+   "fieldname": "published_date",
+   "fieldtype": "Data",
+   "label": "Published Date"
+  },
+  {
+   "fieldname": "isbn_number",
+   "fieldtype": "Data",
+   "label": "ISBN Number"
+  },
+  {
+   "fieldname": "book_status",
+   "fieldtype": "Select",
+   "label": "Book Status",
+   "options": "Available\nIssued\nDamaged\nLost",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "total_copies",
+   "fieldtype": "Int",
+   "label": "Total Copies",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-28 15:06:48.702557",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Book",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
