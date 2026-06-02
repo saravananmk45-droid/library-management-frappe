@@ -5,18 +5,64 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_anls"
+  "member",
+  "book",
+  "transaction_date",
+  "transaction_type",
+  "due__date",
+  "return_date",
+  "remarks"
  ],
  "fields": [
   {
-   "fieldname": "section_break_anls",
-   "fieldtype": "Section Break"
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "book",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Book",
+   "options": "Book",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Transaction Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "due__date",
+   "fieldtype": "Date",
+   "label": "Due  Date"
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "label": "Return Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Select",
+   "label": "Transaction Type",
+   "options": "Issue\nReturn",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-01 11:46:17.955171",
+ "modified": "2026-06-02 19:42:56.554215",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book Transaction",

@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "category_name",
-  "active"
+  "active",
+  "description"
  ],
  "fields": [
   {
@@ -22,12 +23,17 @@
    "fieldname": "active",
    "fieldtype": "Check",
    "label": "Active"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-28 14:58:09.161557",
+ "modified": "2026-06-02 19:03:46.682642",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book Category",
@@ -49,7 +55,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "category_name"
 }
